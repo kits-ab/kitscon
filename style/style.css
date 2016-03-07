@@ -150,6 +150,9 @@ p.topic {
 	margin: 10px auto;
 	font-size: 30px;
 }
+#map-canvas{
+	height: 300px;
+}
 @media (max-width: 600px) {
 	.presentation:hover .ball {
 		left: 198px;
