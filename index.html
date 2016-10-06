@@ -176,13 +176,12 @@ function mouse_wheel(evt)
 	}
 
 function start()
+
 	{
-            if (!(isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch)) {
-
-
-	resize();
-	anim();
-    }
+            if (!(isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch) || true) {
+                resize();
+                anim();
+            }
 	}
 
 function resize()
