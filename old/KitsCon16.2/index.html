@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KitsCon 16.2 - The Salted Herring edition (tm)</title>
+<meta charset="utf-8"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+<script type="text/javascript">
+    
+!function(a){var b=/iPhone/i,c=/iPod/i,d=/iPad/i,e=/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,f=/Android/i,g=/(?=.*\bAndroid\b)(?=.*\bSD4930UR\b)/i,h=/(?=.*\bAndroid\b)(?=.*\b(?:KFOT|KFTT|KFJWI|KFJWA|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|KFARWI|KFASWI|KFSAWI|KFSAWA)\b)/i,i=/Windows Phone/i,j=/(?=.*\bWindows\b)(?=.*\bARM\b)/i,k=/BlackBerry/i,l=/BB10/i,m=/Opera Mini/i,n=/(CriOS|Chrome)(?=.*\bMobile\b)/i,o=/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,p=new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)","i"),q=function(a,b){return a.test(b)},r=function(a){var r=a||navigator.userAgent,s=r.split("[FBAN");if("undefined"!=typeof s[1]&&(r=s[0]),s=r.split("Twitter"),"undefined"!=typeof s[1]&&(r=s[0]),this.apple={phone:q(b,r),ipod:q(c,r),tablet:!q(b,r)&&q(d,r),device:q(b,r)||q(c,r)||q(d,r)},this.amazon={phone:q(g,r),tablet:!q(g,r)&&q(h,r),device:q(g,r)||q(h,r)},this.android={phone:q(g,r)||q(e,r),tablet:!q(g,r)&&!q(e,r)&&(q(h,r)||q(f,r)),device:q(g,r)||q(h,r)||q(e,r)||q(f,r)},this.windows={phone:q(i,r),tablet:q(j,r),device:q(i,r)||q(j,r)},this.other={blackberry:q(k,r),blackberry10:q(l,r),opera:q(m,r),firefox:q(o,r),chrome:q(n,r),device:q(k,r)||q(l,r)||q(m,r)||q(o,r)||q(n,r)},this.seven_inch=q(p,r),this.any=this.apple.device||this.android.device||this.windows.device||this.other.device||this.seven_inch,this.phone=this.apple.phone||this.android.phone||this.windows.phone,this.tablet=this.apple.tablet||this.android.tablet||this.windows.tablet,"undefined"==typeof window)return this},s=function(){var a=new r;return a.Class=r,a};"undefined"!=typeof module&&module.exports&&"undefined"==typeof window?module.exports=r:"undefined"!=typeof module&&module.exports&&"undefined"!=typeof window?module.exports=s():"function"==typeof define&&define.amd?define("isMobile",[],a.isMobile=s()):a.isMobile=s()}(this);
+
+    
+function $i(id) { return document.getElementById(id); }
+function $r(parent,child) { (document.getElementById(parent)).removeChild(document.getElementById(child)); }
+function $t(name) { return document.getElementsByTagName(name); }
+function $c(code) { return String.fromCharCode(code); }
+function $h(value) { return ('0'+Math.max(0,Math.min(255,Math.round(value))).toString(16)).slice(-2); }
+function _i(id,value) { $t('div')[id].innerHTML+=value; }
+function _h(value) { return !hires?value:Math.round(value/2); }
+
+function get_screen_size()
+	{
+	var w=document.documentElement.clientWidth;
+	var h=document.documentElement.clientHeight;
+	return Array(w,h);
+	}
+
+var url=document.location.href;
+
+var flag=true;
+var test=true;
+var n=parseInt((url.indexOf('n=')!=-1)?url.substring(url.indexOf('n=')+2,((url.substring(url.indexOf('n=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('n=')+2+(url.substring(url.indexOf('n=')+2,url.length)).indexOf('&'):url.length):512);
+var w=0;
+var h=0;
+var x=0;
+var y=0;
+var z=0;
+var star_color_ratio=0;
+var star_x_save,star_y_save;
+var star_ratio=256;
+var star_speed=1;
+var star_speed_save=0;
+var star=new Array(n);
+var color;
+var opacity=0.1;
+
+var cursor_x=0;
+var cursor_y=0;
+var mouse_x=0;
+var mouse_y=0;
+
+var canvas_x=0;
+var canvas_y=0;
+var canvas_w=0;
+var canvas_h=0;
+var context;
+
+var key;
+var ctrl;
+
+var timeout;
+var fps=0;
+
+function init()
+	{
+	var a=0;
+	for(var i=0;i<n;i++)
+		{
+		star[i]=new Array(5);
+		star[i][0]=Math.random()*w*2-x*2;
+		star[i][1]=Math.random()*h*2-y*2;
+		star[i][2]=Math.round(Math.random()*z);
+		star[i][3]=0;
+		star[i][4]=0;
+		}
+	var starfield=$i('starfield');
+	starfield.style.position='absolute';
+	starfield.width=w;
+	starfield.height=h;
+	context=starfield.getContext('2d');
+	//context.lineCap='round';
+	context.fillStyle='rgb(0,0,0)';
+	context.strokeStyle='rgb(255,255,255)';
+	
+	}
+
+function anim()
+	{
+	mouse_x=cursor_x-x;
+	mouse_y=cursor_y-y;
+	context.fillRect(0,0,w,h);
+	for(var i=0;i<n;i++)
+		{
+		test=true;
+		star_x_save=star[i][3];
+		star_y_save=star[i][4];
+		star[i][0]+=mouse_x>>4; if(star[i][0]>x<<1) { star[i][0]-=w<<1; test=false; } if(star[i][0]<-x<<1) { star[i][0]+=w<<1; test=false; }
+		star[i][1]+=mouse_y>>4; if(star[i][1]>y<<1) { star[i][1]-=h<<1; test=false; } if(star[i][1]<-y<<1) { star[i][1]+=h<<1; test=false; }
+		star[i][2]-=star_speed; if(star[i][2]>z) { star[i][2]-=z; test=false; } if(star[i][2]<0) { star[i][2]+=z; test=false; }
+		star[i][3]=x+(star[i][0]/star[i][2])*star_ratio;
+		star[i][4]=y+(star[i][1]/star[i][2])*star_ratio;
+		if(star_x_save>0&&star_x_save<w&&star_y_save>0&&star_y_save<h&&test)
+			{
+			context.lineWidth=(1-star_color_ratio*star[i][2])*2;
+			context.beginPath();
+			context.moveTo(star_x_save,star_y_save);
+			context.lineTo(star[i][3],star[i][4]);
+			context.stroke();
+			context.closePath();
+			}
+		}
+	timeout=setTimeout('anim()',fps);
+	}
+
+function move(evt)
+	{
+	evt=evt||event;
+	cursor_x=evt.pageX-canvas_x;
+	cursor_y=evt.pageY-canvas_y;
+	}
+
+function key_manager(evt)
+	{
+	evt=evt||event;
+	key=evt.which||evt.keyCode;
+	//ctrl=evt.ctrlKey;
+	switch(key)
+		{
+		case 27:
+			flag=flag?false:true;
+			if(flag)
+				{
+				timeout=setTimeout('anim()',fps);
+				}
+			else
+				{
+				clearTimeout(timeout);
+				}
+			break;
+		case 32:
+			star_speed_save=(star_speed!=0)?star_speed:star_speed_save;
+			star_speed=(star_speed!=0)?0:star_speed_save;
+			break;
+		case 13:
+			context.fillStyle='rgba(0,0,0,'+opacity+')';
+			break;
+		}
+	top.status='key='+((key<100)?'0':'')+((key<10)?'0':'')+key;
+	}
+
+function release()
+	{
+	switch(key)
+		{
+		case 13:
+			context.fillStyle='rgb(0,0,0)';
+			break;
+		}
+	}
+
+function mouse_wheel(evt)
+	{
+	evt=evt||event;
+	var delta=0;
+	if(evt.wheelDelta)
+		{
+		delta=evt.wheelDelta/120;
+		}
+	else if(evt.detail)
+		{
+		delta=-evt.detail/3;
+		}
+	star_speed+=(delta>=0)?-0.2:0.2;
+	if(evt.preventDefault) evt.preventDefault();
+	}
+
+function start()
+
+	{
+            if (!(isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch)) {
+                resize();
+                anim();
+            }
+	}
+
+function resize()
+	{
+	w=parseInt((url.indexOf('w=')!=-1)?url.substring(url.indexOf('w=')+2,((url.substring(url.indexOf('w=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('w=')+2+(url.substring(url.indexOf('w=')+2,url.length)).indexOf('&'):url.length):get_screen_size()[0]);
+	h=parseInt((url.indexOf('h=')!=-1)?url.substring(url.indexOf('h=')+2,((url.substring(url.indexOf('h=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('h=')+2+(url.substring(url.indexOf('h=')+2,url.length)).indexOf('&'):url.length):get_screen_size()[1]);
+	x=Math.round(w/2);
+	y=Math.round(h/2);
+	z=(w+h)/2;
+	star_color_ratio=1/z;
+	cursor_x=x;
+	cursor_y=y;
+	init();
+	}
+
+document.onmousemove=move;
+document.onkeypress=key_manager;
+document.onkeyup=release;
+document.onmousewheel=mouse_wheel; if(window.addEventListener) window.addEventListener('DOMMouseScroll',mouse_wheel,false);
+
+</script>
+
+	<style type="text/css">
+	body  {margin:0;padding:0;background-color:#000000;font-size:10;overflow:hidden}
+	div   {margin:0;padding:0;position:absolute;font-size:10;overflow:hidden}
+	canvas{background-color:#000000;overflow:hidden;z-index:-1}
+	
+        @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* { padding: 0; margin: 0; }
+
+html
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+        z-index: -2
+}
+
+body
+{
+	width: 100%;
+	height: 100%;
+	font-family: "Droid Sans", arial, verdana, sans-serif;
+	font-weight: 700;
+	color: #ff6;
+	background-color: #000;
+	overflow: hidden;
+        z-index: +2;
+}
+
+p#start
+{
+	position: relative;
+	width: 16em;
+	font-size: 200%;
+	font-weight: 400;
+	margin: 20% auto;
+	color: #4ee;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: intro 2s ease-out;
+	-moz-animation: intro 2s ease-out;
+	-ms-animation: intro 2s ease-out;
+	-o-animation: intro 2s ease-out;
+	animation: intro 2s ease-out;
+}
+
+@-webkit-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+h1
+{
+	position: absolute;
+	width: 2.6em;
+	left: 50%;
+	top: 25%;
+	font-size: 10em;
+	text-align: center;
+	margin-left: -1.3em;
+	line-height: 0.8em;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: logo 5s ease-out 2.5s;
+	-moz-animation: logo 5s ease-out 2.5s;
+	-ms-animation: logo 5s ease-out 2.5s;
+	-o-animation: logo 5s ease-out 2.5s;
+	animation: logo 5s ease-out 2.5s;
+}
+
+h1 sub
+{
+	display: block;
+	font-size: 0.3em;
+	letter-spacing: 0;
+	line-height: 0.8em;
+}
+
+@-webkit-keyframes logo {
+	0% { -webkit-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+	0% { -moz-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+	0% { -ms-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+	0% { -o-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+	0% { transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { transform: scale(0.1); opacity: 0; }
+}
+
+/* the interesting 3D scrolling stuff */
+#titles
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	text-align: justify;
+	overflow: hidden;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: perspective(300px) rotateX(25deg);
+	-moz-transform: perspective(300px) rotateX(25deg);
+	-ms-transform: perspective(300px) rotateX(25deg);
+	-o-transform: perspective(300px) rotateX(25deg);
+	transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+#titles p
+{
+	text-align: justify;
+	margin: 0.8em 0;
+}
+
+#titles p.center
+{
+	text-align: center;
+}
+
+#titles a
+{
+	color: #f37f4a;
+	text-decoration: underline;
+}
+
+#titlecontent
+{
+	position: absolute;
+	top: 100%;
+	-webkit-animation: scroll 100s linear 4s infinite;
+	-moz-animation: scroll 100s linear 4s infinite;
+	-ms-animation: scroll 100s linear 4s infinite;
+	-o-animation: scroll 100s linear 4s infinite;
+	animation: scroll 100s linear 4s infinite;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-moz-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-ms-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-o-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+
+table, th, td {
+   border: 1px solid red;
+}
+</style>
+
+        
+        
+
+
+</head>
+
+<body onload="start()"
+      onresize="resize()"
+      onorientationchange="resize()"
+      onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'"
+      onmouseup="context.fillStyle='rgb(0,0,0)'">
+<canvas id="starfield" style="background-color:#000000"></canvas>
+
+
+
+<p id="start">Kompetensspridning,<br/>salt i håret,<br/>och kanske några ÖL™<br/>i frisk havsmiljö</p>
+
+<h1>KITS CON<sub>The salted herring edition™</sub></h1>
+
+<div id="titles" style="z-index: +4;"><div id="titlecontent">
+
+       
+        
+<p class="center">Episode 16.2<br/>A NEW HOPE FOR<br/>Kok I Tot Sos</p>
+
+
+
+<table style="color: #f37f4a">
+            
+<tr><td>Olof</td><td>Trollematik</td></tr>
+<tr><td>Hoi-Man</td><td>Kits Top Ten</td></tr>
+<tr><td>Johan Anders Myggan</td><td>Camelen i fokus</td></tr>
+<tr><td>Sture</td><td>Hur man känner sig säker i Italien (Appsec)</td></tr>
+<tr><td>Per</td><td>C# 7</td></tr>
+<tr><td>Håkan</td><td>Ofantlig upphandling</td></tr>
+<tr><td>Patrik</td><td>Webworkers, p-threads i webläsaren?</td></tr>
+<tr><td>Pierre</td><td>JavaOne</td></tr>
+<tr><td>Mikael Olof</td><td>Viva las Vegas</td></tr>
+<tr><td>Pierre</td><td>Mordhistoria</td></tr>
+<tr><td>Gustav</td><td>Spegel spegel på väggen där, säg mig vem som tröttast i landet är</td></tr>
+<tr><td>Jonas</td><td>Building scalable low-latency enterprise applications using Swift</td></tr>
+<tr><td>Ola</td><td>Rubberducky FTW</td></tr>
+<tr><td>Joakim D</td><td>Apache Spark, whats not to like?</td></tr>
+<tr><td>Joakim Jonsson</td><td>Kits academy</td></tr>
+<tr><td>Mikael</td><td>CTF for dummies</td></tr>
+
+        </table>
+
+
+
+<p style="color: blueviolet">Tidsplan:</p>
+
+<p>Vi samlas 2016-10-07 08.30 på Salt & Sill <a href="https://goo.gl/maps/koQwj6QMJQ52">(karta)</a> fredag morgon för incheckning och 
+morgonkaffe. Konferensen börjar 09.00. Vi äter förmiddagsfika, lunch och 
+eftermiddagsfika och däremellan lyssnar på spännande föredrag. Kl 17.30 bryter
+vi för Ostronskola, en ÖL™, bastubad, matlagningskurs och middag. På lördagen
+äter vi frukost i lugn och ro för att i valfri takt lämna Klädesholmen.</p>
+
+<p style="color: chartreuse">Glöm inte badkläder om du vill bada och/eller basta.</p>
+
+<p style="color: blueviolet">Transport:</p>
+<p>Sker i egen? bil eller med hjälp av kraften</p>
+
+<p style="color: blueviolet">Konferensrum:</p>
+<p>Konferenslokalen Sillsalteriet är utrustad med projektor, duk, högtalare, DVD¬spelare wi-fi, whiteboard, frukt, godis, block och pennor. Vi tar med AppleTV, MiraCast, Google chrome för trådlösa presentationer.</p>        
+
+
+</div></div>
+
+</body>
+
+</html>

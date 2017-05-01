@@ -1,0 +1,644 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "name": "My Site",
+    "theme": {
+      "name": "mobirise3",
+      "title": "Mobirise 3",
+      "styling": {
+        "primaryColor": "#efefef",
+        "secondaryColor": "#bfcecb",
+        "successColor": "#90a878",
+        "infoColor": "#7e9b9f",
+        "warningColor": "#f3c649",
+        "dangerColor": "#f28281",
+        "titleFont": "Montserrat",
+        "subtitleFont": "Lora",
+        "textFont": "Roboto",
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": false,
+        "isRtl": false
+      }
+    },
+    "versionFirst": "3.12.1",
+    "uniqCompNum": 15,
+    "versionPublish": "3.12.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_inherit": "header1",
+          "_styles": {
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-lead": {
+              "color": "#9c9a9a"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header5",
+          "_anchor": "header5-2",
+          "_params": {
+            "parallax": false,
+            "bgImageRadio": false,
+            "showArrow": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/download-2000x1120.jpg",
+            "bgColor": "#efefef",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "width": 1280,
+              "height": 720,
+              "url": "https://www.youtube.com/embed/cUXtiHx0XMo?rel=0&amp;showinfo=0&autoplay=0&loop=0"
+            },
+            "bgVideoRadio": true,
+            "overlay": true,
+            "overlayOpacity": "0.4",
+            "overlayColor": "#28324e",
+            "contentAlign": "left",
+            "showTitle": true,
+            "showText": true,
+            "showButtons": false
+          },
+          "title": "KITS-CON 17:1",
+          "text": "The accelerated particle edition",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">DOWNLOAD NOW</a>"
+        },
+        {
+          "_inherit": "menu",
+          "_tags": [
+            "Theme"
+          ],
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#000000"
+            },
+            ".link, .dropdown-item": {
+              "color": "#000000"
+            },
+            ".link": {
+              "font-size": "0.75rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.812rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#e6e6e6"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#f7f7f7!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#000000",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#efefef!important"
+            }
+          },
+          "_name": "ext.menu",
+          "_anchor": "ext_menu-1",
+          "_params": {
+            "bgColor": "#ffffff",
+            "fontSize": 0.75,
+            "fontName": {},
+            "fontColor": "#000000",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/kits-small2x-198x128.png",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"></a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#testimonials2-5\">TORSDAG</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#testimonials2-5\">FREDAG</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#testimonials2-5\">LÖRDAG</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">SÖNDAG</a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"index.html#pricing-table2-3\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">INFO</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Resa till Geneve</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Hotel location</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\" aria-expanded=\"true\">Studiebesök CERN</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Hemresa</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#\">Tips på saker att göra</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_inherit": "pricing-table1",
+          "_styles": {
+            ".mbr-plan-header, .mbr-plan-body": {
+              "background-color": "#f4f4f4"
+            },
+            "ul, .mbr-plan-title, .mbr-price-value, .mbr-price-figure, .mbr-price-term": {
+              "color": "#28262b"
+            },
+            ".mbr-plan": {
+              "border-color": "#e8e8e8"
+            },
+            ".mbr-plan .list-group-item": {
+              "border-color": "#cfcfcf"
+            },
+            ".mbr-price-term": {
+              "color": "#000000"
+            },
+            ".mbr-plan-label": {
+              "text-align": "right"
+            },
+            "UL": {
+              "text-align": "left"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "pricing-table2",
+          "_anchor": "pricing-table2-3",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubtitle": false,
+            "firstType": "",
+            "showButtons": false,
+            "secondType": "",
+            "thirdType": "hidden",
+            "fourthType": "hidden"
+          },
+          "title": "Torsdag",
+          "subtitle": "Detta händer på Kits-Con 17:1",
+          "label1": "HOT!",
+          "title1": "",
+          "subtitle1": "",
+          "currency1": "",
+          "price1": "Schema",
+          "period1": "",
+          "description1": "",
+          "list1": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">06.00 - 12.00&nbsp;<b>Resa till Geneve</b></li><li class=\"list-group-item\">12.00 - 13.00 <b>Lunch</b></li><li class=\"list-group-item\">13.00 - 17.00 <b>Konferens</b></li><li class=\"list-group-item\">17.00 - 18.00<i> </i><b>Fritid</b></li><li class=\"list-group-item\">18.00 - 20.00 <b>Walking city tour of Geneve</b></li><li class=\"list-group-item\">20.00 - 21.00 <b>Restaurang ( <a href=\"http://www.hdvglozu.ch/\" target=\"_blank\">http://www.hdvglozu.ch/</a> )</b></li></ul>",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label2": "HOT!",
+          "title2": "",
+          "subtitle2": "",
+          "currency2": "",
+          "price2": "Talks",
+          "period2": "",
+          "description2": "",
+          "list2": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><b>KITS</b> - Patrik Nilsson ( 45 min )</li><li class=\"list-group-item\"><b>Asure</b> - Sture Svensson ( 45 min )</li><li class=\"list-group-item\"><b>Ledarskap</b> - Joakim Backede ( 45 min )</li><li class=\"list-group-item\"><b>Swagger</b> - Hoi-Man Lui ( 45 min )</li><p></p></ul>",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\" data-toolbar=\"-mbrBtnMove\">DEMO</a>",
+          "label3": "HOT!",
+          "title3": "",
+          "subtitle3": "",
+          "currency3": "",
+          "price3": "Lördag",
+          "period3": "",
+          "description3": "",
+          "list3": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label4": "HOT!",
+          "title4": "",
+          "subtitle4": "",
+          "currency4": "",
+          "price4": "Söndag",
+          "period4": "",
+          "description4": "",
+          "list4": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>"
+        },
+        {
+          "_inherit": "pricing-table1",
+          "_styles": {
+            ".mbr-plan-header, .mbr-plan-body": {
+              "background-color": "#f4f4f4"
+            },
+            "ul, .mbr-plan-title, .mbr-price-value, .mbr-price-figure, .mbr-price-term": {
+              "color": "#28262b"
+            },
+            ".mbr-plan": {
+              "border-color": "#e8e8e8"
+            },
+            ".mbr-plan .list-group-item": {
+              "border-color": "#cfcfcf"
+            },
+            ".mbr-price-term": {
+              "color": "#000000"
+            },
+            ".mbr-plan-label": {
+              "text-align": "right"
+            },
+            "UL": {
+              "text-align": "left"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "pricing-table2",
+          "_anchor": "pricing-table2-7",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubtitle": false,
+            "firstType": "",
+            "showButtons": false,
+            "secondType": "hidden",
+            "thirdType": "hidden",
+            "fourthType": "hidden"
+          },
+          "title": "Lördag",
+          "subtitle": "Detta händer på Kits-Con 17:1",
+          "label1": "HOT!",
+          "title1": "",
+          "subtitle1": "",
+          "currency1": "",
+          "price1": "Schema",
+          "period1": "",
+          "description1": "",
+          "list1": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">07.00 - 09.00&nbsp;<b>Frukost</b></li><li class=\"list-group-item\">09.00 - 18.30&nbsp;<b>Egna aktiviteter</b></li><li class=\"list-group-item\">19.00 - 22.00 <b>Gourmet dinner cruise&nbsp;</b></li></ul>",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label2": "HOT!",
+          "title2": "",
+          "subtitle2": "",
+          "currency2": "",
+          "price2": "Talks",
+          "period2": "",
+          "description2": "",
+          "list2": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><b>KITS</b> - Patrik Nilsson ( 45 min )</li><li class=\"list-group-item\"><b>Asure</b> - Sture Svensson ( 45 min )</li><li class=\"list-group-item\"><b>Ledarskap</b> - Joakim Backede ( 45 min )</li><li class=\"list-group-item\"><b>Swagger</b> - Hoi-Man Lui ( 45 min )</li><p></p></ul>",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\" data-toolbar=\"-mbrBtnMove\">DEMO</a>",
+          "label3": "HOT!",
+          "title3": "",
+          "subtitle3": "",
+          "currency3": "",
+          "price3": "Lördag",
+          "period3": "",
+          "description3": "",
+          "list3": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label4": "HOT!",
+          "title4": "",
+          "subtitle4": "",
+          "currency4": "",
+          "price4": "Söndag",
+          "period4": "",
+          "description4": "",
+          "list4": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>"
+        },
+        {
+          "_inherit": "pricing-table1",
+          "_styles": {
+            ".mbr-plan-header, .mbr-plan-body": {
+              "background-color": "#f4f4f4"
+            },
+            "ul, .mbr-plan-title, .mbr-price-value, .mbr-price-figure, .mbr-price-term": {
+              "color": "#28262b"
+            },
+            ".mbr-plan": {
+              "border-color": "#e8e8e8"
+            },
+            ".mbr-plan .list-group-item": {
+              "border-color": "#cfcfcf"
+            },
+            ".mbr-price-term": {
+              "color": "#000000"
+            },
+            ".mbr-plan-label": {
+              "text-align": "right"
+            },
+            "UL": {
+              "text-align": "left"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "pricing-table2",
+          "_anchor": "pricing-table2-6",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubtitle": false,
+            "firstType": "",
+            "showButtons": false,
+            "secondType": "hidden",
+            "thirdType": "hidden",
+            "fourthType": "hidden"
+          },
+          "title": "Fredag",
+          "subtitle": "Detta händer på Kits-Con 17:1",
+          "label1": "HOT!",
+          "title1": "",
+          "subtitle1": "",
+          "currency1": "",
+          "price1": "Schema",
+          "period1": "",
+          "description1": "",
+          "list1": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">07.00 - 08.00&nbsp;<b>Frukost</b></li><li class=\"list-group-item\">08.00 - 16.00 <i><b>Studiebesök</b></i>&nbsp;<b>CERN ( Buss avgår 08.00 )</b></li><li class=\"list-group-item\">17.00 - 18.30&nbsp;<b>Fritid</b></li><li class=\"list-group-item\"><span style=\"font-size: 0.875rem; line-height: 3.125rem;\">19.00 - 21.00 </span><b style=\"font-size: 0.875rem; line-height: 3.125rem;\">Restaurang ( </b><a href=\"https://www.chezphilippe.ch/\" target=\"_blank\">https://www.chezphilippe.ch/</a><b style=\"font-size: 0.875rem; line-height: 3.125rem;\"><a href=\"http://www.hdvglozu.ch/\" target=\"_blank\"></a>&nbsp;</b><b>)</b></li></ul>",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label2": "HOT!",
+          "title2": "",
+          "subtitle2": "",
+          "currency2": "",
+          "price2": "Talks",
+          "period2": "",
+          "description2": "",
+          "list2": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><b>KITS</b> - Patrik Nilsson ( 45 min )</li><li class=\"list-group-item\"><b>Asure</b> - Sture Svensson ( 45 min )</li><li class=\"list-group-item\"><b>Ledarskap</b> - Joakim Backede ( 45 min )</li><li class=\"list-group-item\"><b>Swagger</b> - Hoi-Man Lui ( 45 min )</li><p></p></ul>",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\" data-toolbar=\"-mbrBtnMove\">DEMO</a>",
+          "label3": "HOT!",
+          "title3": "",
+          "subtitle3": "",
+          "currency3": "",
+          "price3": "Lördag",
+          "period3": "",
+          "description3": "",
+          "list3": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label4": "HOT!",
+          "title4": "",
+          "subtitle4": "",
+          "currency4": "",
+          "price4": "Söndag",
+          "period4": "",
+          "description4": "",
+          "list4": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>"
+        },
+        {
+          "_inherit": "pricing-table1",
+          "_styles": {
+            ".mbr-plan-header, .mbr-plan-body": {
+              "background-color": "#f4f4f4"
+            },
+            "ul, .mbr-plan-title, .mbr-price-value, .mbr-price-figure, .mbr-price-term": {
+              "color": "#28262b"
+            },
+            ".mbr-plan": {
+              "border-color": "#e8e8e8"
+            },
+            ".mbr-plan .list-group-item": {
+              "border-color": "#cfcfcf"
+            },
+            ".mbr-price-term": {
+              "color": "#000000"
+            },
+            ".mbr-plan-label": {
+              "text-align": "right"
+            },
+            "UL": {
+              "text-align": "left"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "pricing-table2",
+          "_anchor": "pricing-table2-8",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showSubtitle": false,
+            "firstType": "",
+            "showButtons": false,
+            "secondType": "",
+            "thirdType": "hidden",
+            "fourthType": "hidden"
+          },
+          "title": "Söndag",
+          "subtitle": "Detta händer på Kits-Con 17:1",
+          "label1": "HOT!",
+          "title1": "",
+          "subtitle1": "",
+          "currency1": "",
+          "price1": "Schema",
+          "period1": "",
+          "description1": "",
+          "list1": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">07.00 - 09.00&nbsp;<b>Frukost &amp; Utcheckning</b></li><li class=\"list-group-item\">09.00 - 12.00 <b>Konferens</b></li><li class=\"list-group-item\">12.00 - 13.00&nbsp;<b>Lunch</b></li><li class=\"list-group-item\">13.00 - 15.00 <b>Konferens</b></li><li class=\"list-group-item\">16.45 - 23.30&nbsp;<b>Transfer och hemresa till GBG</b></li></ul>",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label2": "HOT!",
+          "title2": "",
+          "subtitle2": "",
+          "currency2": "",
+          "price2": "Talks",
+          "period2": "",
+          "description2": "",
+          "list2": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><b>GraphQl</b> - Gustav Jorlöv ( 45 min )</li><li class=\"list-group-item\"><b>Trendspaning</b>&nbsp;- Joakim Kemeny, Patrik Nilsson ( 45 min )</li><li class=\"list-group-item\"><b>Kotlin</b>&nbsp;- Olof Gunnarsson ( 30 min )</li><li class=\"list-group-item\"><b>Java Web World</b> - Soroush Nejad ( 15 min )</li><li class=\"list-group-item\"><b>Web pack</b> - Wiliam Bernting ( 45 min )</li><li class=\"list-group-item\"><b>IOT labb</b> - Mikael Weckstén ( 30 &nbsp;min )</li><li class=\"list-group-item\"><b>Open source sårbarhet </b>- Tobias Lans, Mikael Weckstén ( 15 min )</li><p></p></ul>",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\" data-toolbar=\"-mbrBtnMove\">DEMO</a>",
+          "label3": "HOT!",
+          "title3": "",
+          "subtitle3": "",
+          "currency3": "",
+          "price3": "Lördag",
+          "period3": "",
+          "description3": "",
+          "list3": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>",
+          "label4": "HOT!",
+          "title4": "",
+          "subtitle4": "",
+          "currency4": "",
+          "price4": "Söndag",
+          "period4": "",
+          "description4": "",
+          "list4": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">32 GB storage</li><li class=\"list-group-item\">Unlimited users</li><li class=\"list-group-item\">15 GB bandwidth</li></ul>",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-black btn-black-outline\">DEMO</a>"
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header3",
+          "_anchor": "header3-9",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff",
+            "showMeta": true
+          },
+          "title": "Övrig info",
+          "meta": "Good stuff to know"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content2",
+          "_anchor": "content2-a",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<blockquote><p>Resa till Geneve</p><p><br></p><p>Flyg ( SK433 ) avgår från Göteborg Landvetter klockan 06.55. Incheckning skall ske senast 2 timmar innan enligt resebolaget.</p><p>Vi kommer att ankomma till Köpenhamn 07.40 och byta flight till SK613 mot Geneve med avgång 08.20.&nbsp;</p><p>Ankomst till Geneve beräknas att bli 10.25 där en buss med skylt \"KITS\" väntar på oss för transfer till hotellet.</p></blockquote>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "map2",
+          "_anchor": "map2-b",
+          "_params": {
+            "paddingTop": "0",
+            "paddingBottom": "2",
+            "bgColor": "#fff",
+            "googleMap": {
+              "address": "Novotel Geneve Centre, rue de Zurich 19 · 1201 Geneva",
+              "placeId": "ChIJBzOQsyZljEcRgmCgnT75-FA",
+              "state": "ok",
+              "stateDetails": ""
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content2",
+          "_anchor": "content2-c",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<blockquote><p>Studiebesök CERN <span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\"><a href=\"http://home.cern/\" target=\"_blank\">http://home.cern/</a></span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\"><br></span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">Eftersom detta studiebesök kommer att innehålla en hel del tid där vi får stå upp och gå mycket så rekomenderas bra skor.</span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">08.00 avgår bussen till CERN från hotellet.</span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">09.00 - 12.00 så kommer själva studiebesöket att äga rum.</span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">12.00 kör vi en liten lunch som kommer att vara i bambastil och där Patrik drar upp stora kortet och pröjsar käket.</span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">13.00 ish eller när vi vill och är klara med käket så har de en utsällning i CERN som vi kan gå på eller för den som vill bara softa runt lite.</span></p><p><span style=\"font-size: 1.07rem; line-height: 1.5; font-style: normal;\">16.00 går bussen tillbaka till hotellet.</span></p></blockquote>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content2",
+          "_anchor": "content2-d",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<blockquote><p>Tips på saker att hitta på i Geneve på lördagen</p><p><br></p><p>Uppdatering kommer inom kort ...........</p></blockquote>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content2",
+          "_anchor": "content2-e",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<blockquote><p>Hemresa</p><p><br></p><p>16.45 på söndagen är det transfer till flygplatsen. Även här skall vi sikta på att checka in 2 timmar innan avgång.</p><p>Flyg mot Köpenhamn ( SK618 ) avgår 19.20 från Geneve och ankommer till Köpenhamn 21.15.</p><p>Flyg mot Göteborg, Landvetter ( SK448 ) avgår 22.45 från Köpenhamn och ankommer 23.30 på Landvetter.</p></blockquote>"
+        },
+        {
+          "_name": "footer1",
+          "_anchor": "footer1-2",
+          "_params": {
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgColor": "#ffffff",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2017 KITS"
+        }
+      ]
+    }
+  }
+}
