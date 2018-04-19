@@ -96,3 +96,14 @@ h2 {
   right: 0;
 	left: 0;
 }
+
+
+.blink {
+    animation: blinka_mer 1s linear infinite;
+  }
+  
+  @keyframes blinka_mer {
+    50% {
+      opacity: 0;
+    }
+  }
