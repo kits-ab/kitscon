@@ -99,10 +99,10 @@ h2 {
 
 
 .blinka {
-    animation: blinka_mer 1s linear infinite;
+    animation: blink_me 1s linear infinite;
   }
   
-  @keyframes blinka_mer {
+  @keyframes blink_me {
     50% {
       opacity: 0;
     }
