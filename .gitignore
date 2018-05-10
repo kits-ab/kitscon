@@ -1,3 +1,5 @@
 .DS_Store
 nbproject/
 /project.mobirise
+node_modules
+.gitignore

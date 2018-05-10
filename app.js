@@ -100,7 +100,6 @@ app
     );
 
     $scope.$on("$routeChangeSuccess", function($event, next, current) {
-      console.log(next.$$route.originalPath);
       switch (next.$$route.originalPath) {
         case "/schema":
           $scope.koko = "body-schema";
