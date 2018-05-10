@@ -1,7 +1,7 @@
 {"dagar":[
     {"dag":"Torsdag","aktivitet":[
     {"start":"14:15","stop":"15:45", "aktivitet":"Incheckning Landvetter, BOOKING REF: SK/ T4ELXL"},
-    {"start":"14:15","stop":"15:45", "aktivitet":"Fria aktiviteter flygplats"},
+    {"start":"15:45","stop":"16:15", "aktivitet":"Fria aktiviteter flygplats"},
     {"start":"16:15","stop":"17:40", "aktivitet":"Flyg Stockholm, SK162"},
     {"start":"17:40","stop":"19:05", "aktivitet":"Fria aktiviteter flygplats"},
     {"start":"19:05","stop":"20:50", "aktivitet":"Flyg Dublin, SK2565"},
