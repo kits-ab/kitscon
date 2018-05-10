@@ -74,7 +74,7 @@ app
         console.log(result);
       }
     );
-    $http.get("contact.json?kaka=" + Date.now().toLocaleString { method: "GET" }).then(
+    $http.get("contact.json?kaka=" + Date.now().toLocaleString, { method: "GET" }).then(
       result => {
         $scope.contact = result.data;
       },
@@ -82,7 +82,7 @@ app
         console.log(result);
       }
     );
-    $http.get("info.json?kaka=" + Date.now().toLocaleString { method: "GET" }).then(
+    $http.get("info.json?kaka=" + Date.now().toLocaleString, { method: "GET" }).then(
       result => {
         $scope.info = result.data;
       },
@@ -90,7 +90,7 @@ app
         console.log(result);
       }
     );
-    $http.get("kitscon.json?kaka=" + Date.now().toLocaleString { method: "GET" }).then(
+    $http.get("kitscon.json?kaka=" + Date.now().toLocaleString, { method: "GET" }).then(
       result => {
         $scope.kitscon = result.data;
       },
