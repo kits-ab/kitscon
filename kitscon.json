@@ -1,0 +1,18 @@
+{"forelasningar":[
+    {"forelasning":"Pass1","info":[
+    {"start":"14:15","stop":"16:15", "beskrivning":"Incheckning Landvetter"},
+    {"start":"16:15","stop":"17:40", "beskrivning":"Flyg Stockholm"},
+    {"start":"17:40","stop":"19:05", "beskrivning":"Fria aktiviteter flygplats"},
+    {"start":"19:05","stop":"20:50", "beskrivning":"Flyg Dublin"},
+    {"start":"20:50","stop":"21:55", "beskrivning":"Transfer Hotel och Restaurang"},
+    {"start":"21:55","stop":"23:55", "beskrivning":"Middag"},
+    {"start":"23:55","stop":"00:10", "beskrivning":"Promenad till Hotel"}]},
+    {"forelasning":"Pass2","info":[
+        {"start":"14:15","stop":"16:15", "beskrivning":"Incheckning Landvetter"},
+        {"start":"16:15","stop":"17:40", "beskrivning":"Flyg Stockholm"},
+        {"start":"17:40","stop":"19:05", "beskrivning":"Fria aktiviteter flygplats"},
+        {"start":"19:05","stop":"20:50", "beskrivning":"Flyg Dublin"},
+        {"start":"20:50","stop":"21:55", "beskrivning":"Transfer Hotel och Restaurang"},
+        {"start":"21:55","stop":"23:55", "beskrivning":"Middag"},
+        {"start":"23:55","stop":"00:10", "beskrivning":"Promenad till Hotel"}]}
+        ]}

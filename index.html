@@ -5,17 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Gnome</title>
-
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.angularjs.org/1.5.9/angular.min.js" type="text/javascript"></script>
+    <script src="https://code.angularjs.org/1.5.9/angular-route.min.js" type="text/javascript"></script>
+    <script src="https://code.angularjs.org/1.5.9/angular-resource.min.js" type="text/javascript"></script>
+    <script>
+        var app = angular.module('app', ['ngResource', 'ngRoute']);
+    </script>
 </head>
 
-<body>
-    <h1 class="blinka">KitsCon 18:1</h1>
-    <h2>the Green Gnome Edition</h2>
-    <div class="pat">
-        <p class="marquee">&#128679; ... bygge pågår ... &#128679;</p>
-    </div>
-    <script src="main.js"></script>
+<body ng-app="app" ng-controller="MainController" ng-class="koko">
+    <script src="app.js"></script>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#main"><img src="icon.png"></a>
+            </li>
+            <li>
+                <a href="#info" >Info</a>
+            </li>
+            <li>
+                <a href="#schema">Schema</a>
+            </li>
+            <li>
+                <a href="#kitscon">KitsCon</a>
+            </li>
+            <li>
+                <a href="#contact">Annat</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div ng-view></div>
+
 </body>
 
 </html>

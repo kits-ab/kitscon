@@ -1,0 +1,10 @@
+<ul class="ko">
+    <div ng-repeat="(key, value) in data.dagar">
+        <li class="put">{{value.dag}}</li>
+        <ul>
+            <div ng-repeat="(key1, value1) in value.aktivitet">
+                <li class="ko">{{value1.start}}-{{value1.stop}}:{{value1.aktivitet}}</li>
+            </div>
+        </ul>
+    </div>
+</ul>

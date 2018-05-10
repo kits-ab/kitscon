@@ -1,0 +1,10 @@
+<ul class="ko">
+    <div ng-repeat="(key, value) in kitscon.forelasningar">
+        <li class="put">{{value.forelasning}}</li>
+        <ul>
+            <div ng-repeat="(key1, value1) in value.info">
+                <li class="ko">{{value1.start}}-{{value1.stop}}:{{value1.beskrivning}}</li>
+            </div>
+        </ul>
+    </div>
+</ul>

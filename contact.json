@@ -1,0 +1,43 @@
+{"dagar":[
+    {"dag":"Torsdag","aktivitet":[
+    {"start":"14:15","stop":"16:15", "aktivitet":"Incheckning Landvetter"},
+    {"start":"16:15","stop":"17:40", "aktivitet":"Flyg Stockholm"},
+    {"start":"17:40","stop":"19:05", "aktivitet":"Fria aktiviteter flygplats"},
+    {"start":"19:05","stop":"20:50", "aktivitet":"Flyg Dublin"},
+    {"start":"20:50","stop":"21:55", "aktivitet":"Transfer Hotel och Restaurang"},
+    {"start":"21:55","stop":"23:55", "aktivitet":"Middag"},
+    {"start":"23:55","stop":"00:10", "aktivitet":"Promenad till Hotel"}]},
+                                                                                                                
+    {"dag":"Fredag","aktivitet":[
+    {"start":"07:00","stop":"08:30", "aktivitet":"Frukost"},
+    {"start":"08:30","stop":"11:30", "aktivitet":"KitsCon"},
+    {"start":"11:30","stop":"13:00", "aktivitet":"Lunch"},
+    {"start":"13:00","stop":"18:00", "aktivitet":"KitsCon"},
+    {"start":"18:00","stop":"19:30", "aktivitet":"Fria aktiviteter"},
+    {"start":"19:30","stop":"20:00", "aktivitet":"Transfer till middag"},
+    {"start":"20:00","stop":"22:00", "aktivitet":"Middag"},
+    {"start":"22:00","stop":"22:30", "aktivitet":"Transfer till Hotel"}]},
+                                                                                                                
+    {"dag":"Lördag","aktivitet":[
+    {"start":"07:00","stop":"09:00", "aktivitet":"Frukost"},
+    {"start":"09:00","stop":"13:00", "aktivitet":"Fria aktiviteter"},
+    {"start":"13:00","stop":"14:00", "aktivitet":"Lunch"},
+    {"start":"14:00","stop":"16:00", "aktivitet":"Fria aktiviteter"},
+    {"start":"16:00","stop":"18:30", "aktivitet":"Pubrunda"},
+    {"start":"18:30","stop":"19:00", "aktivitet":"Promenad till middag"},
+    {"start":"19:00","stop":"21:00", "aktivitet":"Middag"}]},
+                                                                                                                
+    {"dag":"Söndag","aktivitet":[
+    {"start":"07:00","stop":"08:00", "aktivitet":"Frukost"},
+    {"start":"08:00","stop":"08:30", "aktivitet":"Utcheckning hotel"},
+    {"start":"08:30","stop":"09:30", "aktivitet":"Transfer till slott"},
+    {"start":"09:30","stop":"11:30", "aktivitet":"Guidad tur"},
+    {"start":"11:30","stop":"12:00", "aktivitet":"Transfer till lunch"},
+    {"start":"12:00","stop":"13:00", "aktivitet":"Lunch"},
+    {"start":"13:00","stop":"14:00", "aktivitet":"Transfer flygplats"},
+    {"start":"14:00","stop":"16:05", "aktivitet":"Fria aktiviteter flygplats"},
+    {"start":"16:05","stop":"19:15", "aktivitet":"Flyg till Köpenhamn"},
+    {"start":"19:15","stop":"22:55", "aktivitet":"Fria aktiviteter flygplats"},
+    {"start":"22:55","stop":"23:45", "aktivitet":"Flyg till Göteborg"}]}
+    ]}
+    

@@ -1,0 +1,17 @@
+<ul class="ko">
+    <div ng-repeat="(key, value) in info.info">
+        <li class="put">{{value.info}}</li>
+        <ul>
+            <div ng-repeat="(key1, value1) in value.detaljer">
+                <li class="ko">{{value1.text}} <a href="{{value1.url}}">{{value1.url}}</a></li>
+            </div>
+        </ul>
+    </div>
+</ul>
+
+<!--h1 class="blinka">KitsCon 18:1</h1>
+<h2>the Green Gnome Edition</h2>
+<div class="pat" ng-if="false">
+    <p class="marquee">&#128679; ... bygge pågår ... &#128679;</p>
+</div>
+<script>updateMarqueeAmplitude(document.querySelector(".marquee"));</script-->
