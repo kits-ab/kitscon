@@ -3,7 +3,7 @@
         <li class="put">{{value.dag}}</li>
         <ul>
             <div ng-repeat="(key1, value1) in value.aktivitet">
-                <li class="ko">{{value1.start}}-{{value1.stop}}:{{value1.aktivitet}} <a href="{{value1.url}}">{{value1.url}}</a></li>
+                <li class="ko">{{value1.start}}-{{value1.stop}}:{{value1.aktivitet}} <a href="{{value1.url}}">{{value1.url}}</a> <a ng-if="value1.karta" href="{{value1.karta}}">karta</a></li>
             </div>
         </ul>
     </div>

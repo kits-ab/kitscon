@@ -6,9 +6,9 @@
     {"start":"17:40","stop":"19:05", "aktivitet":"Fria aktiviteter flygplats"},
     {"start":"19:05","stop":"20:50", "aktivitet":"Flyg Dublin, SK2565"},
     {"start":"20:50","stop":"21:55", "aktivitet":"Transfer Hotel och Restaurang med buss, Collins Travel Tel: +353429663972", "url":"https://www.collinstravel.ie/"},
-    {"start":"21:55","stop":"23:55", "aktivitet":"Middag, The Church Café, Junction of Mary St. and Jervis St., Dublin, Dublin 1", "url":"http://thechurch.ie/"},
-    {"start":"23:55","stop":"00:10", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com"}]},
-                                                                                                                
+    {"start":"21:55","stop":"23:55", "aktivitet":"Middag, The Church Café, Junction of Mary St. and Jervis St., Dublin, Dublin 1", "url":"http://thechurch.ie/", "karta":"https://goo.gl/maps/tbnnDBHy3NS2"},
+    {"start":"23:55","stop":"00:10", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com", "karta":"https://goo.gl/maps/tx7DXQ42gGH2"}]},
+
     {"dag":"Fredag","aktivitet":[
     {"start":"07:00","stop":"08:30", "aktivitet":"Frukost"},
     {"start":"08:30","stop":"11:30", "aktivitet":"KitsCon"},
@@ -16,19 +16,19 @@
     {"start":"13:00","stop":"18:00", "aktivitet":"KitsCon"},
     {"start":"18:00","stop":"19:30", "aktivitet":"Fria aktiviteter"},
     {"start":"19:30","stop":"20:00", "aktivitet":"Transfer till middag med buss, Collins Travel Tel: +353429663972"},
-    {"start":"20:00","stop":"22:00", "aktivitet":"Middag Pigs Ear Restaurant, 4 Nassau Street Dublin2 Co. Dublin", "url":"http://www.thepigsear.ie/"},
-    {"start":"22:00","stop":"22:30", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com"}]},
-                                                                                                                
+    {"start":"20:00","stop":"22:00", "aktivitet":"Middag Pigs Ear Restaurant, 4 Nassau Street Dublin2 Co. Dublin", "url":"http://www.thepigsear.ie/", "karta":"https://goo.gl/maps/8ppHx41nLpL2"},
+    {"start":"22:00","stop":"22:30", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com", "karta":"https://goo.gl/maps/tx7DXQ42gGH2"}]},
+ 
     {"dag":"Lördag","aktivitet":[
     {"start":"07:00","stop":"09:00", "aktivitet":"Frukost"},
     {"start":"09:00","stop":"13:00", "aktivitet":"Fria aktiviteter"},
-    {"start":"13:00","stop":"14:00", "aktivitet":"Lunch, Brazen Head, Bridge Street Lower Dublin8 Co. Dublin", "url":"http://brazenhead.com/" },
+    {"start":"13:00","stop":"14:00", "aktivitet":"Lunch, Brazen Head, Bridge Street Lower Dublin8 Co. Dublin", "url":"http://brazenhead.com/", "karta":"https://goo.gl/maps/3uBGRpmrsCk" },
     {"start":"14:00","stop":"16:00", "aktivitet":"Fria aktiviteter"},
-    {"start":"16:00","stop":"18:30", "aktivitet":"Pubrunda, Ha’Penny Bridge Inn 42 Wellington Quay, Temple Bar, Dublin 2. Stephen Fagan (+35872648796) and Luke Deaton", "url":"http://hapennybridgeinn.com/"},
+    {"start":"16:00","stop":"18:30", "aktivitet":"Pubrunda, Ha’Penny Bridge Inn 42 Wellington Quay, Temple Bar, Dublin 2. Stephen Fagan (+35872648796) and Luke Deaton", "url":"http://hapennybridgeinn.com/", "karta":"https://goo.gl/maps/XiPbYPHmxEv"},
     {"start":"18:30","stop":"19:00", "aktivitet":"Promenad till middag"},
-    {"start":"19:00","stop":"21:00", "aktivitet":"Middag, Cleaver East, 6-8 East Essex Street Temple Bar Dublin2 Co. Dublin", "url": "http://cleavereast.ie/"},
-    {"start":"21:00","stop":"21:30", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com"}]},
-                                                                                                                
+    {"start":"19:00","stop":"21:00", "aktivitet":"Middag, Cleaver East, 6-8 East Essex Street Temple Bar Dublin2 Co. Dublin", "url": "http://cleavereast.ie/", "karta":"https://goo.gl/maps/QjnxMBhfVo22"},
+    {"start":"21:00","stop":"21:30", "aktivitet":"Promenad till Hotel, Maldron Hotel Smithfield, Smithfield Village, Dublin 7, Tfnr: +35314850900", "url": "http://www.maldronhotelsmithfield.com", "karta":"https://goo.gl/maps/tx7DXQ42gGH2"}]},
+ 
     {"dag":"Söndag","aktivitet":[
     {"start":"07:00","stop":"08:00", "aktivitet":"Frukost"},
     {"start":"08:00","stop":"08:30", "aktivitet":"Utcheckning hotel"},
